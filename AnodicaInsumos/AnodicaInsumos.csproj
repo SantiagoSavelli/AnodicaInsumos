@@ -20,4 +20,8 @@
     <ProjectReference Include="..\AnodicaInsumos.AccessoDatos\AnodicaInsumos.AccessoDatos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\imagenes\" />
+  </ItemGroup>
+
 </Project>

@@ -29,3 +29,40 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+body {
+    background-color: #0f172a;
+}
+
+.card {
+    background-color: #1e293b;
+    border: none;
+    border-radius: 12px;
+}
+
+.table {
+    color: #e2e8f0;
+}
+
+.table thead {
+    background-color: #1e293b;
+}
+
+.navbar {
+    backdrop-filter: blur(8px);
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.hero-bg {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 16px;
+    padding: 60px 40px;
+}
