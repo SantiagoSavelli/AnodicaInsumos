@@ -4,7 +4,11 @@ using System.Text;
 
 namespace AnodicaInsumos.AccessoDatos.Data.Repository.IRepository
 {
-    internal class IContenedorTrabajo
+    public interface IContenedorTrabajo : IDisposable
     {
+        // Repositorios
+
+
+        void Save();
     }
 }

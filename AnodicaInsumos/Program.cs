@@ -1,4 +1,6 @@
 using AnodicaInsumos.AccessoDatos.Data;
+using AnodicaInsumos.AccessoDatos.Data.Repository;
+using AnodicaInsumos.AccessoDatos.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ConexionSQL") ?? throw new InvalidOperationException("Connection string 'ConexionSQL' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
+builder.Services.AddScoped<IInsumosRepository, InsumosRepository>();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddControllersWithViews();

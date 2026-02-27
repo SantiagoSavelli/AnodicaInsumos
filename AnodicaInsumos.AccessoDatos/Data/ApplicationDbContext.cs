@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AnodicaInsumos.Modelos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,5 +13,8 @@ namespace AnodicaInsumos.AccessoDatos.Data
         { 
         
         }
+
+        // DbSets
+        public DbSet<Insumo> Insumos { get; set; }
     }
 }
